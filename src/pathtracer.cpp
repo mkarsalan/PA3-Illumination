@@ -502,7 +502,7 @@ void PathTracer::key_press(int key) {
 
 Spectrum PathTracer::estimate_direct_lighting(const Ray& r, const Intersection& isect) {
 
-  // Part 3: implement this function
+  // Task 1: implement this function
 
   // make a coordinate system for a hit point
   // with N aligned with the Z direction.
@@ -527,7 +527,7 @@ Spectrum PathTracer::estimate_direct_lighting(const Ray& r, const Intersection& 
 
 Spectrum PathTracer::estimate_indirect_lighting(const Ray& r, const Intersection& isect) {
 
-  // Part 4: implement this function
+  // Task 2: implement this function
 
   Matrix3x3 o2w;
   make_coord_space(o2w, isect.n);
